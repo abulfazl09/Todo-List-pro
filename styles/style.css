@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    animation: navbar 0.45s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar {
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@media screen and (max-width:423px) {
+    .cre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .re{
+        width: 100%;
+    }
+
+    .re:nth-child(1){
+        margin-bottom: 5px;
+    }
+}

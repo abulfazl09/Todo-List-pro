@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/fonts/Vazirmatn-font-face.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>لیست انجام کار ها</title>
+</head>
+
+<body>
+    <main>
+        <!-- Add to do -->
+        <nav class="navbar bg-primary w-100">
+            <div class="container cre">
+                <div class="re col col-sm-7 col-md-8 text-center">
+                    <input id="addTodoInput" type="text" class="form-control" placeholder="افزودن کار">
+                </div>
+                <div class="re col col-sm-5 col-md-4 text-center">
+                    <button id="addTodoBtn" class="btn btn-outline-light">افزودن</button>
+                    <button id="clearListBtn" class="btn btn-danger">پاک کردن لیست</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- List Section -->
+        <div id="listContainer" class="container py-3">
+            
+        </div>
+
+        <!-- Null Section -->
+        <div id="nullList" class="container my-auto">
+            <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+                <img width="50%" src="./images/todo.jpg" alt="bg-null">
+                <div class="display-6 fw-bold">لیست شما خالی است!</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>

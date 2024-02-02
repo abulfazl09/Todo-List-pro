@@ -91,8 +91,9 @@ function todoGenerator(list) {
       });
 
       listStorage.splice(indexTodo, 1);
-      setTodoData(listStorage);
-      todoGenerator(listStorage);
+      todoList = listStorage;
+      setTodoData(todoList);
+      todoGenerator(todoList);
     };
 
     todoBtnBox.appendChild(compeletTodoBtn);
